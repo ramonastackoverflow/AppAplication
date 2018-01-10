@@ -17,7 +17,7 @@ import java.util.List;
 
 
 
-public class QuestionMainActivity extends AppCompatActivity {
+/*public class QuestionMainActivity extends AppCompatActivity {
 
 
 
@@ -81,4 +81,4 @@ public class QuestionMainActivity extends AppCompatActivity {
 
 
 
-
+*/

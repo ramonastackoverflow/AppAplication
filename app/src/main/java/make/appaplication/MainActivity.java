@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static Button buttonCheckAnswer;
 
+
+
     private ViewPager viewPager;
     private List<Fragment> fragmentList;
 
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         buttonCheckAnswer = (Button) findViewById(R.id.button_check_answers);
+
 
        /* listener = new ScaleListener();
         s = new Scaler(getApplicationContext(), listener); */
@@ -108,8 +111,12 @@ public class MainActivity extends AppCompatActivity {
                     boolean isGoodAnswer = checkAnswers();
                     Toast.makeText(getApplicationContext(), "isGoodAnswer value is: " + isGoodAnswer, Toast.LENGTH_SHORT).show();
 
-                    if (isGoodAnswer)
+                    if (isGoodAnswer) {
                         intent.putExtra("KEY_ANSWER", "Good Answer");
+                        intent.putExtra("KEY_ANOTHER_BUTTON", "AnotherButton");
+
+
+                    }
                     else
                         intent.putExtra("KEY_ANSWER", "Wrong Answer");
                 } else

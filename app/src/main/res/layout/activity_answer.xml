@@ -33,5 +33,17 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <Button
+        android:id="@+id/button"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_display_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="" />
+
+
+
 
 </RelativeLayout>

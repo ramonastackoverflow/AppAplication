@@ -1,4 +1,4 @@
-package make.appaplication;
+/*package make.appaplication;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,15 +13,23 @@ public class MyFragment extends Fragment {
 
     View view;
 
-    public static MyFragment newInstance(DataModel data) {
+    private static final String QUESTION = "question";
+    private static final String ANS = "ans";
+    private static final String SELECTION = "selection";
+    private static final String IMG = "img";
 
+    public static MyFragment newInstance(DataModel data) {
         MyFragment fragment = new MyFragment();
         Bundle bundle = new Bundle();
-        bundle.putSerializable("data",data);
+        bundle.putString(QUESTION, data.getQuestion());
+        bundle.putInt(ANS, data.getAns());
+        bundle.putStringArrayList(SELECTION, data.getOptions());
+        bundle.putString(IMG, data.getImg());
         fragment.setArguments(bundle);
         return fragment;
-
     }
+
+
 
     @Override
     public void onAttach(Context context) {
@@ -50,4 +58,4 @@ public class MyFragment extends Fragment {
 }
 
 
-
+*/
